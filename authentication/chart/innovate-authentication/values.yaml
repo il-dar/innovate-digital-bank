@@ -3,8 +3,8 @@
 replicaCount: 1
 revisionHistoryLimit: 3
 image:
-  repository: mycluster.icp:8500/default/innovate-authentication
-  tag: v1.0.0
+  repository: moficodes/innovate-authentication
+  tag: v1.0.1-alpine
   pullPolicy: Always
   resources:
     requests:
