@@ -6,9 +6,9 @@ Development of [cloud native apps](https://www.cncf.io/blog/2017/05/15/developin
 
 It’s a little _\(a lot\)_ more fun, however, to build a so-called cloud native app, than to talk about one.
 
-So here's our attempt:
+### Let's get started!
 
-We’ll take a use-case that has a bit of real-world familiarity to it — A digital bank. Naturally inspired by [Monzo](http://monzo.com/). Let’s call it Innovate.
+We’ll take a use-case that has a bit of real-world familiarity to it — a digital bank originally inspired by [Monzo](http://monzo.com/) - Innovate.
 
 [A live version deployed on a Kubernetes cluster in IBM Cloud is available for you to try here](http://ibm.biz/digibank). To test it out, sign up for an account. A process runs periodically to dump randomized transactions and bills for user accounts, so give it a couple of minutes and refresh to see your populated profile.
 
