@@ -1,8 +1,11 @@
 # Table of contents
 
 * [Introduction](gitbook/workshop.md)
-* [Overview](overview/README.md)
-  * [Setup Steps](overview/workshop-1.md)
-  * [Lab 1](overview/lab-1.md)
-  * [Lab 2](overview/lab-2.md)
+* [Workshop](overview/README.md)
+  * [Setup Steps](overview/setup.md)
+  * [Access Your Cluster](overview/access-your-cluster.md)
+  * [Initialize Helm](overview/initialize-helm.md)
+  * [Deploy Innovate Digital Bank](overview/deploy-innovate-digital-bank.md)
+  * [Access Your Application](overview/access-your-application.md)
+* [Workshop Extra Credit](lab-2.md)
 

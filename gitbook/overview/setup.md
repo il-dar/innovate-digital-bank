@@ -1,12 +1,10 @@
 ---
 description: >-
-  These are tools that is necessary for the workshop. This part should be
-  completed before the workshop begins.
+  These are the prerequisite steps for the Innovate Digital Bank guided
+  workshop.
 ---
 
 # Setup Steps
-
-These are the prerequisite steps for the Innovate Digital Bank guided workshop.
 
 In this section, you will create your own IBM Cloud account, and then get access to a IBM Cloud Lab account which contains pre-provisioned clusters. Each lab attendee will be granted access to one cluster.
 
@@ -167,7 +165,5 @@ git clone --single-branch -b workshop https://github.com/moficodes/innovate-digi
 
 ## Next Steps
 
-You've completed the pre-requisite steps to start the lab. In the next steps, you'll deploy the Innovate Digital Bank application to your Kubernetes cluster.
-
-[Get Started on Part 1](lab-1.md)
+You've completed the pre-requisite steps to start the lab. In the next step, you'll configure access to your cluster.
 

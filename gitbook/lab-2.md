@@ -1,6 +1,6 @@
-# Lab 2
+# Workshop Extra Credit
 
-This lab makes use of alot of the things done in the previous lab. If you haven't done it yet. Complete [lab part 1 here](lab-1.md)
+This lab makes use of alot of the things done in the previous lab. If you haven't done it yet. Complete [lab part 1 here]()
 
 ## Step 1
 
@@ -118,5 +118,5 @@ For example for portal. Update the `portal/chart/innovate-portal/values.yaml` fi
 
 Change the repository to `<YOUR-DOCKER-USERNAME>/<image-name>` and tag to `<image-tag>`
 
-Once all 7 microservice helm charts have been updated, we can get to deploying them. The helm charts deployment is same as [Lab Part I](lab-1.md#step-3)
+Once all 7 microservice helm charts have been updated, we can get to deploying them. The helm charts deployment is same as [Lab Part I]()
 
