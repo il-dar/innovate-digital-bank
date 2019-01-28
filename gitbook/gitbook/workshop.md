@@ -24,7 +24,7 @@ Today we will see why Kubernetes and microservices are a perfect fit for financi
 ## Agenda
 
 * 6:30 PM - 7:00 PM Meet and Greet
-* 7:00 PM - 7:10 PM Pre Setup
+* 7:00 PM - 7:10 PM Setup Steps
 * 7:10 PM - 7:50 PM Presentations
 * 7:50 PM - 8:30 PM Workshop
 

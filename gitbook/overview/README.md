@@ -1,4 +1,4 @@
-# Summary
+# Overview
 
 In this workshop, we will build and deploy a dummy digital bank composed of a set of microservices that communicate with each other. We'll be using Node.js, Express, MongoDB, and the IBM Cloud Container Service.
 
@@ -12,9 +12,9 @@ We’ll take a use-case that has a bit of real-world familiarity to it — A dig
 
 [A live version deployed on a Kubernetes cluster in IBM Cloud is available for you to try here](http://ibm.biz/digibank). To test it out, sign up for an account. A process runs periodically to dump randomized transactions and bills for user accounts, so give it a couple of minutes and refresh to see your populated profile.
 
-![Screens](.gitbook/assets/screens-1.png)
+![Screens](../.gitbook/assets/screens-1%20%282%29.png)
 
-![Screens](.gitbook/assets/screens-2.png)
+![Screens](../.gitbook/assets/screens-2%20%282%29.png)
 
 ## Learning objectives
 
@@ -36,5 +36,5 @@ When thinking of business capabilities, our imaginary bank will need the followi
 5. _Bills:_ Handles creation, payment, and retrieval of bills.
 6. _Support:_ Handles communication with Watson Assistant to enable a support chat feature.
 
-![Demo architecture](.gitbook/assets/architecture.png)
+![Demo architecture](../.gitbook/assets/architecture.png)
 

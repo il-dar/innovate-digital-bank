@@ -20,7 +20,7 @@ Generally to get started with Kubernetes, the first step is to provision a clust
 
 To get a cluster, head to the Get Cluster\([https://get-cluster.mybluemix.net/](https://get-cluster.mybluemix.net/)\) tool.
 
-![Get Cluster Tool](.gitbook/assets/grantcluster.png)
+![Get Cluster Tool](../.gitbook/assets/grantcluster.png)
 
 Use the key `ibmcloudroadshow` and input the email you used to sign up for IBM Cloud. Ensure that US South is chosen as we've created clusters in the Dallas data center for this lab.
 

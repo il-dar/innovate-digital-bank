@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Introduction](workshop.md)
-* [Overview](overview.md)
-  * [Setup Steps](workshop-1.md)
-  * [Lab 1](lab-1.md)
-  * [Lab 2](lab-2.md)
+* [Introduction](gitbook/workshop.md)
+* [Overview](overview/README.md)
+  * [Setup Steps](overview/workshop-1.md)
+  * [Lab 1](overview/lab-1.md)
+  * [Lab 2](overview/lab-2.md)
 
