@@ -4,15 +4,23 @@ description: >-
   completed before the workshop begins.
 ---
 
-# Pre-Setup: Create account and get cluster
-
-This are the pre-setup steps for the Innovate Digital Bank guided workshop.
+These are the prerequisite steps for the Innovate Digital Bank guided workshop.
 
 In this section, you will create your own IBM Cloud account, and then get access to a IBM Cloud Lab account which contains pre-provisioned clusters. Each lab attendee will be granted access to one cluster.
 
 ## Create your IBM Cloud account
 
-[Sign Up for IBM Cloud](https://ibm.biz/Bd2zDm)
+[Sign up for IBM Cloud](https://ibm.biz/Bd2zDm)
+
+## Get a Kubernetes Cluster
+
+Generally to get started with Kubernetes, the first step is to provision a cluster which can take up to 10 minutes. In addition, free clusters come with limited features and a single worker VM/node. For this workshop, we've created Standard (paid) clusters with full Kubernetes functionality.
+
+To get a cluster, head to the Get Cluster(https://get-cluster.mybluemix.net/) tool.
+
+![Get Cluster Tool](.gitbook/assets/grantcluster.png)
+
+Use the key `ibmcloudroadshow` and input the email you used to sign up for IBM Cloud. Ensure that US South is chosen as we've created clusters in the Dallas datacenter for this lab.
 
 ## Install IBM Cloud CLI
 
@@ -147,8 +155,6 @@ kubectl version
     choco install kubernetes-helm
     ```
 
-## TODO: Grant Cluster
-
 ## Clone the workshop repository
 
 In this step, we'll clone the workshop branch of the repository.
@@ -157,5 +163,9 @@ In this step, we'll clone the workshop branch of the repository.
 git clone --single-branch -b workshop https://github.com/moficodes/innovate-digital-bank.git
 ```
 
-[Lab Part 1](lab-1.md)
+## Next Steps
+
+You've completed the pre-requisite steps to start the lab. In the next steps, you'll deploy the Innovate Digital Bank application to your Kubernetes cluster.
+
+[Get Started on Part 1](lab-1.md)
 
