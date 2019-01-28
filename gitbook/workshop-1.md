@@ -4,19 +4,19 @@ description: >-
   completed before the workshop begins.
 ---
 
-# Pre-Setup
+# Pre-Setup: Create account and get cluster
 
-This document is the guided workshop for the code pattern Innovate Digital Bank. In this workshop we will use Helm to deploy a micro-service based application into Kubernetes Cluster.
+This are the pre-setup steps for the Innovate Digital Bank guided workshop.
 
-## Step 1
+In this section, you will create your own IBM Cloud account, and then get access to a IBM Cloud Lab account which contains pre-provisioned clusters. Each lab attendee will be granted access to one cluster.
 
-[Sign Up for IBM Cloud.](https://ibm.biz/Bd2zDm)
+## Create your IBM Cloud account
 
-## Step 2
+[Sign Up for IBM Cloud](https://ibm.biz/Bd2zDm)
 
-[Install IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)
+## Install IBM Cloud CLI
 
-You can use the installer for your os. Or you can use the shell installer.
+You use the [IBM Cloud CLI installer](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use) or the OS-specific shell installers below.
 
 * MacOS
 
@@ -36,11 +36,9 @@ You can use the installer for your os. Or you can use the shell installer.
   iex(New-Object Net.WebClient).DownloadString('https://clis.ng.bluemix.net/install/powershell')
   ```
 
-## Step 3
+## Install IBM CLI Plugins
 
-Install IBM CLI Plugins
-
-For the LAB we will need a few plugins.
+For the lab we will need a few plugins.
 
 * container-service
 
@@ -54,9 +52,9 @@ For the LAB we will need a few plugins.
   ibmcloud plugin install container-registry
   ```
 
-## Step 4
+## Install kubectl tooling
 
-[Install Kubectl for your OS](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
+[Install kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) to enable access to your cluster.
 
 * MacOS
   * Homebrew
@@ -126,7 +124,7 @@ Once Kubernetes is installed, test successful installation with,
 kubectl version
 ```
 
-## Step 5
+## Install Helm
 
 [Install Helm for your OS](https://docs.helm.sh/using_helm/#installing-helm)
 
@@ -149,19 +147,15 @@ kubectl version
     choco install kubernetes-helm
     ```
 
-## Step 6
+## TODO: Grant Cluster
 
-Get access to the lab Kubernetes Cluster.
+## Clone the workshop repository
 
-## Step 7
-
-Clone the workshop repo.
+In this step, we'll clone the workshop branch of the repository.
 
 ```bash
 git clone --single-branch -b workshop https://github.com/moficodes/innovate-digital-bank.git
 ```
 
-We are cloning the repo directly to the workshop branch.
-
-[Lab Part I](lab-1.md)
+[Lab Part 1](lab-1.md)
 
