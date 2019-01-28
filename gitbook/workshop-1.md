@@ -1,6 +1,6 @@
 ---
 description: >-
-  These are tools that in necessary for the workshop. This part should be
+  These are tools that is necessary for the workshop. This part should be
   completed before the workshop begins.
 ---
 
