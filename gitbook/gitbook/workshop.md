@@ -8,10 +8,12 @@ Today we will see why kubernetes and microservice is a perfect fit for banking a
 
 ## Lab Instructors
 
-* Mofizur Rahman, IBM Developer Advocate
-* Grant Steinfeld, IBM Developer Advocate
-* Remko De Knikker, IBM Open Banking Platform
-* Sai Vennam, IBM Developer Advocate
+* Mofizur Rahman, IBM Developer Advocate \([@moficodes](https://twitter.com/moficodes)\)
+* Grant Steinfeld, IBM Developer Advocate \([@AgentIdea](https://twitter.com/AgentIdea)\)
+* Remko De Knikker, IBM Open Banking Platform \([@remkohdev](https://twitter.com/remkohdev)\)
+* Sai Vennam, IBM Developer Advocate \([@sai\_vennam](https://twitter.com/sai_vennam)\)
+
+
 
 ## Agenda
 
