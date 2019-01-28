@@ -24,7 +24,7 @@ You can use the installer for your os. Or you can use the shell installer.
   curl -fsSL https://clis.ng.bluemix.net/install/linux | sh
   ```
 
-* Windows Powershell (Run as Administrator)
+* Windows Powershell \(Run as Administrator\)
 
   ```bash
   iex(New-Object Net.WebClient).DownloadString('https://clis.ng.bluemix.net/install/powershell')
@@ -53,21 +53,19 @@ For the LAB we will need a few plugins.
 [Install Kubectl for your OS](https://kubernetes.io/docs/tasks/tools/install-kubectl/)
 
 * MacOS
-
   * Homebrew
 
     ```bash
     brew install kubernetes-cli
     ```
+
   * MacPorts
 
     ```bash
     sudo port selfupdate
     sudo port install kubectl
     ```
-
 * Linux
-
   * Ubuntu, Debian or HypriotOS
 
     ```bash
@@ -79,6 +77,7 @@ For the LAB we will need a few plugins.
     ```
 
   * CentOS, RHEL or Fedora
+
     ```bash
     cat <<EOF > /etc/yum.repos.d/kubernetes.repo
     [kubernetes]
@@ -97,9 +96,7 @@ For the LAB we will need a few plugins.
     ```bash
     sudo snap install helm --classic
     ```
-
 * Windows
-
   * Powershell
 
     ```bash
@@ -107,8 +104,7 @@ For the LAB we will need a few plugins.
     install-kubectl.ps1 [-DownloadLocation <path>]
     ```
 
-    > Note
-    > ```If you do not specify a `DownloadLocation`, `kubectl` will be installed in the user's temp Directory.```
+    > Note ``If you do not specify a `DownloadLocation`, `kubectl` will be installed in the user's temp Directory.``
 
   * Chocolatey
 
@@ -129,23 +125,18 @@ kubectl version
 [Install Helm for your OS](https://docs.helm.sh/using_helm/#installing-helm)
 
 * MacOS
-
   * Homebrew
 
     ```bash
     brew install kubernetes-helm
     ```
-
 * Linux
-
   * Snap
 
     ```bash
     sudo snap install helm --classic
     ```
-
 * Windows
-
   * Chocolatey
 
     ```bash
@@ -166,4 +157,5 @@ git clone --single-branch -b workshop https://github.com/moficodes/innovate-digi
 
 We are cloning the repo directly to the workshop branch.
 
-[Lab Part I](./lab-1.md)
+[Lab Part I](lab-1.md)
+

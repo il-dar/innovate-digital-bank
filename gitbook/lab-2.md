@@ -6,25 +6,13 @@ This lab makes use of alot of the things done in the previous lab. If you haven'
 
 [Install Docker](https://docs.docker.com/install/)
 
-* MacOS
-  [Download Docker Desktop from Docker Hub](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
-
+* MacOS [Download Docker Desktop from Docker Hub](https://hub.docker.com/editions/community/docker-ce-desktop-mac)
 * Linux
-
-  * CentOS
-    Install using this [Document](https://docs.docker.com/install/linux/docker-ce/centos/)
-
-  * Debian
-    Install using this [Document](https://docs.docker.com/install/linux/docker-ce/debian/)
-
-  * Fedora
-    Install using this [Document](https://docs.docker.com/install/linux/docker-ce/fedora/)
-  
-  * Ubuntu
-    Install using this [Document](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
-  
-* Windows
-  [Download Docker Desktop from Docker Hub](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+  * CentOS Install using this [Document](https://docs.docker.com/install/linux/docker-ce/centos/)
+  * Debian Install using this [Document](https://docs.docker.com/install/linux/docker-ce/debian/)
+  * Fedora Install using this [Document](https://docs.docker.com/install/linux/docker-ce/fedora/)
+  * Ubuntu Install using this [Document](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+* Windows [Download Docker Desktop from Docker Hub](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 
   Docker Desktop requires Windows 10 Professional or Enterprise. For other versions of windows download [Docker Toolbox](https://docs.docker.com/toolbox/overview/)
 
@@ -59,8 +47,7 @@ Your output may be a little different.
 
 ## Step 3
 
-[Create Docker Hub account.](https://hub.docker.com/signup) 
-Save the docker hub login info. We will use that in the next step.
+[Create Docker Hub account.](https://hub.docker.com/signup) Save the docker hub login info. We will use that in the next step.
 
 ## Step 4
 
@@ -132,3 +119,4 @@ For example for portal. Update the `portal/chart/innovate-portal/values.yaml` fi
 Change the repository to `<YOUR-DOCKER-USERNAME>/<image-name>` and tag to `<image-tag>`
 
 Once all 7 microservice helm charts have been updated, we can get to deploying them. The helm charts deployment is same as [Lab Part I](lab-1.md#step-3)
+

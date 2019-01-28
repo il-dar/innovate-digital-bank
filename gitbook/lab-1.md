@@ -1,6 +1,6 @@
 # Workshop
 
-If you have not done the setup, please finish the [setup from here](./workshop.md).
+If you have not done the setup, please finish the [setup from here](workshop.md).
 
 ## Step 1
 
@@ -37,7 +37,7 @@ Happy Helming!
 
 > I am getting the warning because I already had Tiller installed in my cluster.
 
-The command above will install helm for your kubernetes cluster and also store the cofig to your local directory. It will also install tiller in the cluster. **_Tiller_** is the in-cluster component of Helm. It interacts directly with the Kubernetes API server to _install_, _upgrade_, _query_, and _remove_ Kubernetes resources. It also stores the objects that represent releases.
+The command above will install helm for your kubernetes cluster and also store the cofig to your local directory. It will also install tiller in the cluster. _**Tiller**_ is the in-cluster component of Helm. It interacts directly with the Kubernetes API server to _install_, _upgrade_, _query_, and _remove_ Kubernetes resources. It also stores the objects that represent releases.
 
 Check helm is properly installed
 
@@ -176,7 +176,6 @@ Thats one of the 7 microservices deployed. Go ahead and deploy the other 6.
 General steps are,
 
 * Change directory into the service
-
 * Run following command
 
   ```bash
@@ -247,13 +246,13 @@ Save this IP address. We will need it to access our application.
 
 ## Step 6
 
-Open any browser.
-Go to `<YOUR-IP>:30060`
+Open any browser. Go to `<YOUR-IP>:30060`
 
 With any luck, you should see something like this.
 
-![Image](../doc/source/images/website.png)
+![Image](.gitbook/assets/website.png)
 
 For this workshop we used a prebuilt docker image hosted at docker hub. For the next part of the lab we will see how we can create the docker image ourself.
 
 [Lab Part II](lab-2.md)
+
