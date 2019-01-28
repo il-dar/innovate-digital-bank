@@ -1,4 +1,10 @@
-# Setup
+---
+description: >-
+  These are tools that in necessary for the workshop. This part should be
+  completed before the workshop begins.
+---
+
+# Pre-Setup
 
 This document is the guided workshop for the code pattern Innovate Digital Bank. In this workshop we will use Helm to deploy a micro-service based application into Kubernetes Cluster.
 
