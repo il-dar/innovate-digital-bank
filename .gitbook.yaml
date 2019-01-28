@@ -1,4 +1,4 @@
-root: ./
+root: ./gitbook/
 
 structure:
   workshop: workshop.md
