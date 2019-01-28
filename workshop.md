@@ -1,6 +1,6 @@
 # Microservices and Kubernetes for Banking Workshop
 
-This document is the guided workshop for the code pattern Innovate Digital Bank. In this workshop we will use Helm to deploy a micro-service based application into Kubernetes Cluster. 
+This document is the guided workshop for the code pattern Innovate Digital Bank. In this workshop we will use Helm to deploy a micro-service based application into Kubernetes Cluster.
 
 ## Step 1
 
@@ -8,7 +8,7 @@ This document is the guided workshop for the code pattern Innovate Digital Bank.
 
 ## Step 2
 
-[Install IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use) 
+[Install IBM Cloud CLI](https://console.bluemix.net/docs/cli/reference/ibmcloud/download_cli.html#install_use)
 
 You can use the installer for your os. Or you can use the shell installer.
 
@@ -154,7 +154,7 @@ kubectl version
 
 ## Step 6
 
-Get access to the lab Kubernetes Cluster
+Get access to the lab Kubernetes Cluster.
 
 ## Step 7
 
@@ -165,3 +165,8 @@ git clone --single-branch -b workshop https://github.com/moficodes/innovate-digi
 ```
 
 We are cloning the repo directly to the workshop branch.
+
+There are 2 variation of this workshop. The instructor will choose one for the workshop.
+
+[lab 1](./lab-1.md)
+[lab 2](./lab-2.md)
