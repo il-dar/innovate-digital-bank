@@ -109,7 +109,7 @@ $ docker images | grep moficodes/innovate-portal
 moficodes/innovate-portal                v1.0.1-alpine       c958e755e877        About an hour ago   156MB
 ```
 
-## Step 6
+## Step 7
 
 Push the image to docker hub image registry
 
@@ -123,7 +123,7 @@ Once the image is pushed you should be able to see it in your docker hub reposit
 
 Do the same for all 7 microservices.
 
-## Setp 7
+## Setp 8
 
 In each of the microservices `folder/chart/innovate-<microservice>/values.yaml` file update the image with your docker image.
 
@@ -131,4 +131,4 @@ For example for portal. Update the `portal/chart/innovate-portal/values.yaml` fi
 
 Change the repository to `<YOUR-DOCKER-USERNAME>/<image-name>` and tag to `<image-tag>`
 
-Once all 7 microservice helm charts have been updated, we can get to deploying them. The helm charts deployment is same as [first part of the lab](lab-1.md#step-3)
+Once all 7 microservice helm charts have been updated, we can get to deploying them. The helm charts deployment is same as [Lab Part I](lab-1.md#step-3)

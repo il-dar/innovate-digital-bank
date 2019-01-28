@@ -2,7 +2,7 @@ root: ./gitbook/
 
 structure:
   readme: gitbook/workshop.md
-  summary: gitbook/summary.md
+
 
 
 

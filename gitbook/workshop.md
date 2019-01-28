@@ -166,4 +166,4 @@ git clone --single-branch -b workshop https://github.com/moficodes/innovate-digi
 
 We are cloning the repo directly to the workshop branch.
 
-[lab](./lab-1.md)
+[Lab Part I](./lab-1.md)

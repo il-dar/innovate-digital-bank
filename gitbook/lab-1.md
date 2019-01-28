@@ -252,8 +252,8 @@ Go to `<YOUR-IP>:30060`
 
 With any luck, you should see something like this.
 
-![Image](doc/source/images/website.png)
+![Image](../doc/source/images/website.png)
 
 For this workshop we used a prebuilt docker image hosted at docker hub. For the next part of the lab we will see how we can create the docker image ourself.
 
-[lab](lab-2.md)
+[Lab Part II](lab-2.md)
