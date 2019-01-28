@@ -10,7 +10,7 @@ Learn how to set the context to work with your cluster by using the `kubectl` CL
    ibmcloud ks clusters
    ```
 
-   > Note: If no clusters are shown, make sure you are targeting the right region with `ibmcloud ks region-set`. Choose the same region that you chose when creating the cluster on the [Get Cluster](https://get-cluster.mybluemix.net/) page.
+   > Note: If no clusters are shown, make sure you are targeting the right region with `ibmcloud ks region-set us-south`.
 
    b. Download the configuration file and certificates for your cluster using the `cluster-config` command.
 
