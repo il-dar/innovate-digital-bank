@@ -1,6 +1,6 @@
 # Lab 1
 
-If you have not done the setup, please finish the [setup from here](workshop-1.md).
+If you have not done the setup, please finish the [setup from here]().
 
 ## Step 1
 
