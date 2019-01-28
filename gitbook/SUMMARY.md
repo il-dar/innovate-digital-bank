@@ -1,8 +1,8 @@
 # Table of contents
 
-* [Initial page](gitbook/workshop.md)
-* [Kubernetes and Microservices powering modern banking](summary.md)
-* [Microservices and Kubernetes for Banking Workshop](workshop.md)
-* [Workshop](lab-1.md)
-* [Workshop](lab-2.md)
+* [Kubernetes Bank Workshop](gitbook/workshop.md)
+* [Summary](summary.md)
+* [Setup](workshop.md)
+* [Lab 1](lab-1.md)
+* [Lab 2](lab-2.md)
 

@@ -1,4 +1,4 @@
-# Workshop
+# Lab 2
 
 This lab makes use of alot of the things done in the previous lab. If you haven't done it yet. Complete [lab part 1 here](lab-1.md)
 

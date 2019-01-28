@@ -1,4 +1,4 @@
-# Microservices and Kubernetes for Banking Workshop
+# Setup
 
 This document is the guided workshop for the code pattern Innovate Digital Bank. In this workshop we will use Helm to deploy a micro-service based application into Kubernetes Cluster.
 

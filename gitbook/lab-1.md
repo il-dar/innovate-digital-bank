@@ -1,4 +1,4 @@
-# Workshop
+# Lab 1
 
 If you have not done the setup, please finish the [setup from here](workshop.md).
 

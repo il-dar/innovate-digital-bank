@@ -1,4 +1,4 @@
-# Kubernetes and Microservices powering modern banking
+# Summary
 
 In this workshop, we will build and deploy a dummy digital bank composed of a set of microservices that communicate with each other. We'll be using Node.js, Express, MongoDB, and the IBM Cloud Container Service.
 
