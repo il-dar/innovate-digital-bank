@@ -1,9 +1,9 @@
 root: ./gitbook/
 
 structure:
-  workshop: workshop.md
-  lab 1 : lab-1.md
-  lab 2 : lab-2.md
+  1 workshop: workshop.md
+  2 lab 1 : lab-1.md
+  3 lab 2 : lab-2.md
 
 
 
