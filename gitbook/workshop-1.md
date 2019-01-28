@@ -4,7 +4,7 @@ description: >-
   completed before the workshop begins.
 ---
 
-# Pre-Setup
+# Setup Steps
 
 These are the prerequisite steps for the Innovate Digital Bank guided workshop.
 
