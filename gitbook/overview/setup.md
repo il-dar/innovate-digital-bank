@@ -16,9 +16,9 @@ In this section, you will create your own IBM Cloud account, and then get access
 
 Generally to get started with Kubernetes, the first step is to provision a cluster which can take up to 10 minutes. In addition, free clusters come with limited features and a single worker VM/node. For this workshop, we've created Standard \(paid\) clusters with full Kubernetes functionality.
 
-To get a cluster, head to the Get Cluster\([https://get-cluster.mybluemix.net/](https://get-cluster.mybluemix.net/)\) tool.
+To get a cluster, head to the [Get Cluster](https://get-cluster.mybluemix.net/) tool.
 
-![Get Cluster Tool](../.gitbook/assets/grantcluster.png)
+![](../.gitbook/assets/grantcluster.png)
 
 Use the key `ibmcloudroadshow` and input the email you used to sign up for IBM Cloud. Ensure that US South is chosen as we've created clusters in the Dallas data center for this lab.
 
@@ -126,7 +126,7 @@ For the lab we will need a few plugins.
 
 You can also install using [curl](https://kubernetes.io/docs/tasks/tools/install-kubectl/#install-kubectl-binary-using-curl).
 
-Once Kubernetes is installed, test successful installation with,
+Once Kubernetes is installed, test that the CLI works.
 
 ```bash
 kubectl version
