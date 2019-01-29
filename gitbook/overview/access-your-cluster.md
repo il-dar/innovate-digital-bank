@@ -5,7 +5,7 @@ Learn how to set the context to work with your cluster by using the `kubectl` CL
 1. First, login to IBM Cloud using the CLI:  
    `ibmcloud login`
 
-   When asked to choose an account, choose the `IBM` account.
+   When asked to choose an account, choose the `IBM` account. For region, choose `us-south`.
 
 2. Set the context for your cluster in your CLI.
 
