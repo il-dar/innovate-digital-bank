@@ -5,13 +5,11 @@ Initialize Helm on your cluster
 ```bash
 $ helm init
 
-$HELM_HOME has been configured at /Users/mofizur.rahman@ibm.com/.helm.
-Warning: Tiller is already installed in the cluster.
-(Use --client-only to suppress this message, or --upgrade to upgrade Tiller to the current version.)
+$HELM_HOME has been configured at /Users/svennam/.helm.
+
+Tiller (the Helm server-side component) has been installed into your Kubernetes Cluster.
 Happy Helming!
 ```
-
-> I am getting the warning because I already had Tiller installed in my cluster.
 
 The command above will install helm for your kubernetes cluster and also store the cofig to your local directory. It will also install tiller in the cluster. _**Tiller**_ is the in-cluster component of Helm. It interacts directly with the Kubernetes API server to _install_, _upgrade_, _query_, and _remove_ Kubernetes resources. It also stores the objects that represent releases.
 

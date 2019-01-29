@@ -1,6 +1,6 @@
 # Deploy Innovate Digital Bank
 
-We will take advantage of Helm to deploy the application into our Kubernetes cluster. A chart is a collection of files that describe a related set of Kubernetes resources. A single chart might be used to deploy something simple, like a memcached pod, or something complex, like a full web app stack with HTTP servers, databases, caches, and so on. For our lab each helm chart is used for one kubernetes deployment.
+We will take advantage of Helm to deploy the application into our Kubernetes cluster. A chart is a collection of files that describe a related set of Kubernetes resources. A single chart might be used to deploy something simple, like a memcached pod, or something complex like a full web app stack with HTTP servers, databases, caches, and so on. For our lab each helm chart corresponds to a single Kubernetes deployment.
 
 You should already have the repo cloned. Change directory into the folder.
 
@@ -8,7 +8,7 @@ You should already have the repo cloned. Change directory into the folder.
 cd innovate-digital-bank
 ```
 
-Lets see all the directories in the folder
+Let's see all the directories in the folder
 
 ```bash
 $ ls -1 -d */
@@ -22,20 +22,16 @@ transactions/
 userbase/
 ```
 
-We can see our 7 mircoservices and the doc folder.
+We can see our 7 microservices and the doc folder.
 
-> The flags on the `ls` command is basically listing just the directories and forcing them to be printed on separate lines.
+> The flags on the `ls` command lists the directories and forces them to be printed on separate lines.
 
-We will deploy the `portal` first.
+We'll deploy the `portal` microservice first.
 
-```bash
-cd portal
-```
-
-Lets look at the helm chart we are about to deploy.
+`cat` the helm chart to take a look before we deploy.
 
 ```bash
-$ cat chart/innovate-portal/values.yaml
+$ cat portal/chart/innovate-portal/values.yaml
 
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
@@ -69,12 +65,12 @@ hpa:
 services:
 ```
 
-There are some important information in this helm chart. We can see what image we are using for our deployment. We have also set some [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/). We have a liveness probe that [health checks](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/) our application every second. We could also have [horizontal pod autoscaling](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) for automatically scaling based on load. For this workshop we will keep it as false.
+This file defines how Helm deploys applications. For instance, we can see what image we are using for our deployment. We have also set some [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/). We have a liveness probe that [health checks](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/) our application every second. We could also have [horizontal pod autoscaling](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) for automatically scaling based on load. For this workshop we keep it as `false`.
 
-For this workshop we are using prebuilt images of the services. These images live in [Docker Hub](https://hub.docker.com/u/moficodes).
+For this workshop we are using pre-built images of the services. These images live in [Docker Hub](https://hub.docker.com/u/moficodes).
 
 ```bash
-$ helm upgrade innovate-portal chart/innovate-portal --install
+$ helm upgrade innovate-portal portal/chart/innovate-portal --install
 
 Release "innovate-portal" has been upgraded. Happy Helming!
 LAST DEPLOYED: Sun Jan 27 20:42:16 2019
@@ -95,9 +91,9 @@ NAME                                         READY  STATUS             RESTARTS 
 innovate-portal-deployment-57b478cc5f-gds6x  0/1    ContainerCreating  0         0s
 ```
 
-The `--install` flag install the helm chart if it already was not installed and upgrade otherwise.
+The `--install` flag installs the helm chart only if it is not already installed - otherwise it will upgrade it.
 
-Give it a few seconds. Then run the following:
+Give it a few seconds and then run the following commands:
 
 ```bash
 $ kubectl get po
@@ -113,24 +109,30 @@ NAME                      TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)    
 innovate-portal           NodePort    172.21.236.41    <none>        3100:30060/TCP   2d
 ```
 
-So the image was deployed and a service was created for us to be access it from anywhere.
+The image was deployed and a service was created allowing us to access it from anywhere.
 
-Thats one of the 7 microservices deployed. Go ahead and deploy the other 6.
+That's one of the seven microservices deployed. Go ahead and deploy the other six:
 
-General steps are,
+```bash
+accounts
+authentication
+bills
+portal (already deployed)
+support
+transactions
+userbase
+```
 
-* Change directory into the service
-* Run following command
+Run the following commands for all the microservices:
 
-  ```bash
-  helm upgrade innovate-<microservice-name> chart/<microservice-name> --install
-  ```
+```bash
+helm upgrade innovate-<microservice-name> <microservice-name>/chart/innovate-<microservice-name> --install
+```
 
-When its all done. Check all the pods, deployments and services are running properly. If you see any pod in any other state than `Running` get an instructor to troubleshoot.
+When it's all done check that all the pods, deployments, and services are running properly. If you see a pod in any state other than `Running`, get an instructor to troubleshoot.
 
 ```bash
 $ kubectl get po
-
 NAME                                                  READY     STATUS    RESTARTS   AGE
 innovate-accounts-deployment-d9ffcfcf5-7rqmp          1/1       Running   0          1h
 innovate-authentication-deployment-59d6796fdc-pbgxg   1/1       Running   0          1h
@@ -140,9 +142,7 @@ innovate-support-deployment-5b9889dd84-4b58w          1/1       Running   0     
 innovate-transactions-deployment-88889b98f-gdm8n      1/1       Running   0          1h
 innovate-userbase-deployment-5f8478b8f-c4vm4          1/1       Running   0          1h
 
-
 $ kubectl get deploy
-
 NAME                                 DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 innovate-accounts-deployment         1         1         1            1           1h
 innovate-authentication-deployment   1         1         1            1           1h
@@ -153,7 +153,6 @@ innovate-transactions-deployment     1         1         1            1         
 innovate-userbase-deployment         1         1         1            1           1h
 
 $ kubectl get svc
-
 NAME                      TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)          AGE
 innovate-accounts         NodePort    172.21.10.10     <none>        3400:30120/TCP   1h
 innovate-authentication   NodePort    172.21.24.92     <none>        3200:30100/TCP   1h

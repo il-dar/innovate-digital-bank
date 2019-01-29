@@ -2,7 +2,12 @@
 
 Learn how to set the context to work with your cluster by using the `kubectl` CLI, access the Kubernetes dashboard, and gather basic information about your cluster.
 
-1. Set the context for your cluster in your CLI. Every time you log in to the IBM Cloud Kubernetes Service CLI to work with the cluster, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in IBM Cloud.
+1. First, login to IBM Cloud using the CLI:  
+   `ibmcloud login`
+
+   When asked to choose an account, choose the `IBM` account.
+
+2. Set the context for your cluster in your CLI.
 
    a. List the available clusters.
 
@@ -18,9 +23,13 @@ Learn how to set the context to work with your cluster by using the `kubectl` CL
    ibmcloud ks cluster-config <your_cluster_name>
    ```
 
-   c. Copy and paste the output export command from the previous step to set the `KUBECONFIG` environment variable and configure your CLI to run `kubectl` commands against your cluster. Example: `export KUBECONFIG=/Users...`
+   c. Copy and paste the output export command from the previous step to set the `KUBECONFIG` environment variable and configure your CLI to run `kubectl` commands against your cluster. Example:  
+   `export KUBECONFIG=/Users...`   
 
-2. Get basic information about your cluster and its worker nodes. This information can help you manage your cluster and troubleshoot issues.
+
+   > Note: Every time you log in to the IBM Cloud Kubernetes Service CLI to work with the cluster, you must run these commands to set the path to the cluster's configuration file as a session variable. The Kubernetes CLI uses this variable to find a local configuration file and certificates that are necessary to connect with the cluster in IBM Cloud.
+
+3. Get basic information about your cluster and its worker nodes. This information can help you manage your cluster and troubleshoot issues.
 
    a. View details of your cluster.
 
@@ -35,7 +44,7 @@ Learn how to set the context to work with your cluster by using the `kubectl` CL
    ibmcloud ks worker-get <worker_ID>
    ```
 
-3. Validate access to your cluster.
+4. Validate access to your cluster.
 
    a. View nodes in the cluster.
 
